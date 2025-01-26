@@ -1,0 +1,144 @@
+body{
+    background-color: #B9D7EA;
+}
+.container{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insideContainer{
+    width: 80vw;
+    height: 85vh;
+    background-color: #0A2153;
+    box-shadow: 0.25rem 0.438rem 0.5rem 0.125rem #0A2153;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#startbtn{
+    background-color: #889CC8;
+    width: 12.8125rem;
+    height: 3.625rem;
+    border:none;
+    border-radius: 2.25rem;
+    color: white;
+    font-size:1.5rem ;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+.nameLogin{
+    font-size: 1.858rem;
+    color: white;
+}
+
+img{
+    width: 27rem;
+    height: 27rem;
+}
+/* @media (max-width:25.9375rem) {
+    .container{
+        height: 69vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .insideContainer{
+        width: 87vw;
+        height: 68vh;
+        background-color: #0A2153;
+        box-shadow: 0.25rem 0.438rem 0.5rem 0.125rem #0A2153;
+        border-radius: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #startbtn{
+        background-color: #889CC8;
+        width: 12.8125rem;
+        height: 3.625rem;
+        border:none;
+        border-radius: 2.25rem;
+        color: white;
+        font-size:1.5rem ;
+        font-weight: bolder;
+        margin-top: 2.8rem;
+    }
+    img{
+        width: 25rem;
+        height: 25rem;
+    }
+} */
+
+/* @media (min-width:26rem) and (max-width:48rem) {
+    .container{
+        height: 98vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .insideContainer{
+        width: 84vw;
+        height: 84vh;
+        background-color: #0A2153;
+        box-shadow: 0.25rem 0.438rem 0.5rem 0.125rem #0A2153;
+        border-radius: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #startbtn{
+        background-color: #889CC8;
+        width: 12.8125rem;
+        height: 3.625rem;
+        border:none;
+        border-radius: 2.25rem;
+        color: white;
+        font-size:1.5rem ;
+        font-weight: bolder;
+        margin-top: 1.5rem;
+    }
+    img{
+        width: 24rem;
+        height: 24rem;
+    }
+}
+
+@media (min-width:48rem) and (max-width:60rem) {
+    .container{
+        height: 98vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .insideContainer{
+        width: 84vw;
+        height: 84vh;
+        background-color: #0A2153;
+        box-shadow: 0.25rem 0.438rem 0.5rem 0.125rem #0A2153;
+        border-radius: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #signbtn{
+        background-color: #889CC8;
+        width: 12.8125rem;
+        height: 3.625rem;
+        border:none;
+        border-radius: 2.25rem;
+        color: white;
+        font-size:1.5rem ;
+        font-weight: bolder;
+        margin-top: 1.5rem;
+    }
+    img{
+        width: 23rem;
+        height: 23rem;
+    }
+} */

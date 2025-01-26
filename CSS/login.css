@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #B9D7EA;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exam-card {
+  background-color: #0A2153;
+  border-radius: 80px;
+  box-shadow: 11px 8px 9px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  color: white;
+  flex-direction: row;
+  overflow: hidden;
+  width: 80vw;
+}
+
+.loginImage {
+  flex: 1;
+  background-color: #889CC8;
+  border-radius: 80px;
+  box-shadow: 11px 9px 20px 0px #000000;
+  position: relative;
+  z-index: 1;
+}
+
+.loginImage img {
+  margin-top: -3rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.rightSide {
+  flex: 1;
+  padding: 1rem;
+}
+
+.loginWord {
+  background-color: #889CC8;
+  width: 10rem;
+  height: 2.7rem;
+  margin-top: 1.4rem;
+  margin-left: -3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+.inputs {
+  margin-top: 7rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+input {
+  width: 90%;
+  height: 3rem;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  color: #0A2153;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.input-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.input-wrapper img {
+  position: absolute;
+  right: 4.5rem;
+  top: 0.5rem;
+  width: 33px;
+  height: 36px;
+}
+
+.input-wrapper img:hover {
+  cursor: pointer;
+}
+
+button {
+  width: 10rem;
+  padding: 0.4rem 2rem;
+  background-color: #889CC8;
+  border: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: 36px;
+  margin: auto;
+}
+
+p {
+  margin: auto;
+}
+
+.Register {
+  text-decoration: underline;
+  font-family: 1.2rem;
+  cursor: pointer;
+}
+
+
+.error {
+  color: red;
+  margin-left: 1rem;
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .exam-card {
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+    padding: 1rem;
+  }
+
+  .loginImage {
+    flex: 1;
+        background-color: #889CC8;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 10px;
+        box-shadow: none;
+        position: relative;
+        width: 108vh;
+        height: 46vh;
+        margin: 0;
+        padding: 0;
+        margin-left: -1rem;
+        margin-top: -2rem;
+  }
+
+  .loginImage img {
+    max-width: 43%;
+        height: auto;
+        object-fit: contain;
+        margin-top: -2px;
+        margin-left: 12rem
+  }
+
+  .rightSide {
+    padding: 0.5rem;
+    height: 50%;
+    margin: 0;
+  }
+
+  .loginWord {
+    width: 24%;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-left: -2rem;
+  }
+
+  .inputs {
+    margin: 0rem auto;
+    width: 100%;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  input {
+    width: 90%;
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  button {
+    width: 20%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .input-wrapper img {
+    width: 20px;
+    height: 20px;
+    right: 2rem;
+    top: 0.5rem;
+  }
+
+  .error {
+    font-size: 0.9rem;
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  * {
+    padding: 0;
+    margin: 0; 
+  }
+  
+  .exam-card {
+    flex-direction: column;
+    width: 90vw;
+    height: 94vh;
+    padding: 0 !important;
+    margin: 0 1rem !important; 
+    box-sizing: border-box; 
+  }
+
+  .loginImage {
+    flex: 1;
+    background-color: #889CC8;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 10px;
+    box-shadow: none;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loginImage img {
+    max-width: 90%; 
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  .rightSide {
+    padding: 0.5rem;
+    height: 55%;
+    margin: 0;
+  }
+
+  .loginWord {
+    width: 54%;
+    height: 2rem;
+    font-size: 0.8rem;
+    border-radius: 15px;
+    margin-top: 0px;
+    margin-bottom: 9px;
+    margin-left: -3rem;
+  }
+
+  .inputs {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  input {
+    width: 90%;
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  button {
+    width: 40%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .input-wrapper img {
+    width: 20px;
+    height: 20px;
+    right: 2rem;
+    top: 0.5rem;
+  }
+
+  .error {
+    font-size: 0.9rem;
+    margin-right: 3rem;
+  }
+}

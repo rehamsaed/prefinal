@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "How can we change the text color of an element?",
+    "options": ["color", "background-color", " Both A and B", "None of the above"],
+    "answer": "color",
+    "data-question-number": 1
+  },
+  {
+    "id": 2,
+    "question": "What does CSS stand for?",
+    "options": [ "Creative Style Syntax", "Coded Style System", "Cascading Syntax Sheets","Cascading Style Sheets"],
+    "answer": "Cascading Style Sheets",
+    "data-question-number": 2
+  },
+  {
+    "id": 3,
+    "question": "How to change text color?",
+    "options": [ "color","text color", "background-color", "font-color"],
+    "answer": "color",
+    "data-question-number": 3
+  },
+  {
+    "id": 4,
+    "question": "What is a block-level element?",
+    "options": ["Inline element", "Takes full widtht", "Small width element","Take the full height"],
+    "answer": "Takes full widtht",
+    "data-question-number": 4
+  },
+  {
+    "id": 5,
+    "question": "What is inline CSS?",
+    "options": ["External file", "Separate stylesheet", "Global styles","Style inside HTML element"],
+    "answer": "Style inside HTML element",
+    "data-question-number": 5
+  }
+]

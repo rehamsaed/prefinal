@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Bootstrap with npm</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="exam-card col-lg-12 col-md-10 col-12">
+        <div class="loginImage">
+          <div class="loginDiv">
+            <img src="../Images/loginImage.png" alt="" />
+          </div>
+        </div>
+        <div class="rightSide">
+          <div class="loginWord">
+            <h3>Login</h3>
+          </div>
+          <div class="inputs">
+            <div class="input-wrapper">
+              <input  id="emailInput" type="text" placeholder="E-mail">
+             
+            </div>
+            <span class="error">Test</span>
+            <div class="input-wrapper">
+              <input id="passwordInput" type="password" placeholder="Password">
+              
+              <img class="PasswordIcone" src="../Images/hide.png" alt="icon">
+           
+            </div>
+            <span class="error">Test</span>
+            <button class="btnlogin">Login</button>
+            <p>Are you haven’t account? <span class="Register">Register</span></p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/login.js"></script>
+  </body>
+</html>

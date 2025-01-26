@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CSS/Exam.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="insideContainer">
+        <!-- Example Nav -->
+        <div class="navQuestions">
+          <div class="Question1 questionNavItem" data-question-number="1">
+            <div>Question 1</div>
+            <i class="fas fa-flag"></i>
+          </div>
+          <div class="Question2 questionNavItem" data-question-number="2">
+            <div>Question 2</div>
+            <i class="fas fa-flag"></i>
+          </div>
+          <div class="Question3 questionNavItem" data-question-number="3">
+            <div>Question 3</div>
+            <i class="fas fa-flag"></i>
+          </div>
+          <div class="Question4 questionNavItem" data-question-number="4">
+            <div>Question 4</div>
+            <i class="fas fa-flag"></i>
+          </div>
+          <div class="Question5 " data-question-number="5">
+            <div>Question 5</div>
+            <i class="fas fa-flag"></i>
+          </div>
+        </div>
+
+        <div class="timer">
+          <div class="timeLeft">Time left 05:00</div>
+          <div class="timerBar">
+            <div id="timer-bar"></div>
+            <div id="moving-circle"></div>
+          </div>
+        </div>
+        <div class="questionsContainer">
+          <div class="questionsHead">
+            <p>Choose The Correct Answer</p>
+            <p><i class="far fa-flag"></i></p>
+          </div>
+          <div class="questionsBody">
+            <div class="firstQuestionContainer">
+              <p>How can we change the text color of an element?</p>
+              <div class="triangle"></div>
+            </div>
+            <div class="firstQuestionAnswer">
+              <div class="choiceOne">a. background-color</div>
+              <div class="choiceTwo">b. color</div>
+              <div class="choiceThre">c. Both A and B</div>
+              <div class="choiceFour">d. None of the above</div>
+            </div>
+          </div>
+          <div class="questionButton">
+            <div class="previousButton">Previous</div>
+            <div class="numOfQuestion"><span>1</span>-5</div>
+            <div class="nextButton">Next</div>
+          </div>
+        </div>
+        <div class="submit">Submit</div>
+      </div>
+    </div>
+    <script src="Exam.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Bootstrap with npm</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/exam.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="exam-card col-lg-12 col-md-10 col-12">
+        <div id="timer" style="font-size: 2em">05:00</div>
+        <h2 id="exam-title">Welcome to the Exam</h2>
+        <p id="question" class="question"></p>
+        <div id="options"></div>
+        <button id="prev-btn" disabled>Previous</button>
+        <button id="next-btn" disabled>Next</button>
+        <button id="start-btn">Start Exam</button>
+        <button id="submit-btn">Submit</button>
+        <p id="score"></p>
+        
+      </div>
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="exam.js"></script>
+  </body>
+</html>
