@@ -30,7 +30,7 @@
 
 let currentQuestionIndex = 0;
 let questions = [];
-let selectedAnswers = {};
+let selectedAnswers = [];
 let totalScore=0;
 
 fetch('que.json')
@@ -53,79 +53,53 @@ fetch('que.json')
     }
   })
   .catch(error => console.error('Error loading JSON:', error));
+//********************************************************* */
 
-  function displayQuestion(index) {
-    const questionContainer = document.querySelector('.firstQuestionContainer p');
-    const choicesContainer = document.querySelector('.firstQuestionAnswer');
-  
-    
-    choicesContainer.innerHTML = '';
-  
+function displayQuestion(index) {
+  const questionContainer = document.querySelector('.firstQuestionContainer p');
+  const choicesContainer = document.querySelector('.firstQuestionAnswer');
 
-    if (!questions[index]) {
+  choicesContainer.innerHTML = '';
+
+  if (!questions[index]) {
       console.error(`No question found at index ${index}`);
       return;
-    }
+  }
 
-    questionContainer.textContent = questions[index].question;
+  questionContainer.textContent = questions[index].question;
 
-    questions[index].options.forEach((option, i) => {
+  questions[index].options.forEach((option, i) => {
       const choiceDiv = document.createElement('div');
       choiceDiv.textContent = `${String.fromCharCode(97 + i)}. ${option}`;
       choiceDiv.classList.add(`choice${i + 1}`);
       choiceDiv.classList.add('choice');
-  
-      if (selectedAnswers[index] === option) {
-        choiceDiv.classList.add('selected'); 
 
-        if (option === questions[index].answer) {
-          choiceDiv.classList.add('correctanswer');
-        } else {
-          choiceDiv.classList.add('incorrectanswer');
-        }
+      if (selectedAnswers[index] === option) {
+          choiceDiv.classList.add('selectedItem');
       }
-  
 
       choiceDiv.addEventListener('click', () => {
 
-        selectedAnswers[index] = option;
-  
+          Array.from(choicesContainer.children).forEach(child => {
+              child.classList.remove('selectedItem');
+          });
 
-        Array.from(choicesContainer.children).forEach(child => {
-          child.classList.remove('correctanswer', 'incorrectanswer', 'selected');
-          child.classList.remove('dimmed');
-        });
-  
+          choiceDiv.classList.add('selectedItem');
 
-        if (option === questions[index].answer) {
-          choiceDiv.classList.add('correctanswer');
-          totalScore+=0.2; 
-        } else {
-          choiceDiv.classList.add('incorrectanswer'); 
-        }
-  
+          selectedAnswers[index] = option;
 
-        const correctChoice = Array.from(choicesContainer.children).find(child =>
-          child.textContent.includes(questions[index].answer)
-        );
-        if (correctChoice) {
-          correctChoice.classList.add('correctanswer');
-        }
-  
+          if (option === questions[index].answer) {
+              totalScore += 0.2; 
+          } 
 
-        Array.from(choicesContainer.children).forEach(child => {
-          if (!child.classList.contains('correctanswer') && !child.classList.contains('incorrectanswer')) {
-            child.classList.add('dimmed'); 
-          }
-        });
- 
-        choiceDiv.classList.add('selected');
+          console.log(`Current Score: ${totalScore}`);
       });
-  
-      choicesContainer.appendChild(choiceDiv);
-    });
-  }
 
+      choicesContainer.appendChild(choiceDiv);
+  });
+}
+
+//********************************************************* */
 function updateQuestionNumber(index) {
   const numOfQuestion = document.querySelector('.numOfQuestion span');
   numOfQuestion.textContent = index + 1; 
