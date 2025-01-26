@@ -208,25 +208,10 @@ body{
 
 /*********************************/
 
-.correctanswer {
-    background-color: #4CAF50 !important; 
-    color: white;
+.selectedItem{
+    background-color: #05163a !important
+
 }
-
-.incorrectanswer {
-    background-color: #F44336 !important; 
-    color: white;
-}
-
-.dimmed {
-    opacity: 0.5; 
-    background-color: #889CC8;
-
-    pointer-events: none; 
-  }
-
-
-
 
 .selected i {
     visibility: visible;  
